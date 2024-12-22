@@ -7,12 +7,9 @@ import streamlit.components.v1 as components
 st.title('Endless Gus')
 
 
-st.html(
-    """
-<iframe src='https://wfmu.org/archiveplayer/?show=140083&archive=253112' style='border:0; width:400px; height:200px;'></iframe>
+html_string = "<span style=""white-space:nowrap""><a href=""https://wfmu.org/flashplayer.php?version=3&amp;show=140083&amp;archive=253112&amp;starttime=0:30:21"" onclick=""return kdbarchivelink(this.href, 3)"">Pop-up</a></span>"
 
-    """
-)
+st.html(html_string)
 
 
 
